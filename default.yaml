@@ -1,0 +1,16 @@
+
+requests:
+  timeout: 5
+  headers:
+    User-Agent: "Mozilla/5.0 (PentestScanner)"
+  verify_ssl: false
+
+crawler:
+  max_depth: 2
+
+auth:
+  login_path: "/login"
+  credentials:
+    - ["admin", "admin"]
+    - ["root", "root"]
+    - ["user", "123456"]
